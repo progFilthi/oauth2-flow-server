@@ -1,4 +1,8 @@
 package com.product.oauthintegration;
 
-public record MeResponse() {
+public record MeResponse(
+        String name,
+        String email,
+        String picture
+) {
 }
