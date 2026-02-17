@@ -19,3 +19,15 @@ spring:
             authorization-uri: https://accounts.google.com/o/oauth2/v2/auth
             token-uri: https://oauth2.googleapis.com/token
             user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+
+
+
+
+  datasource:
+            url: jdbc:postgresql://localhost:5432/oauth-integration_db
+            username: emma
+            password: emma_pass
+
+  jpa:
+        hibernate:
+            ddl-auto: update

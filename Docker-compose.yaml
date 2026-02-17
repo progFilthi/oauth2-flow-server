@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:latest
+    container_name: oauth-integration_pg
+    environment:
+      POSTGRES_DB: oauth-integration_db
+      POSTGRES_USER: emma
+      POSTGRES_PASSWORD: emma_pass
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - '5432:5432'
+    volumes:
+      - oauth-integration_pg:/var/lib/postgresql/data
+
+volumes:
+  oauth-integration_pg:
